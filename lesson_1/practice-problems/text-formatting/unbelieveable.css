@@ -1,0 +1,17 @@
+body {
+  font-size: 18px;
+}
+
+mark {
+  background-color: yellow;
+  font: 12px Courier, monospace;
+}
+
+strong {
+  font-size: 15px;
+}
+
+em {
+  font-size: 20px;
+  text-transform: uppercase;
+}
