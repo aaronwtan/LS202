@@ -6,23 +6,23 @@ ul {
   padding-left: 0;
 }
 
-.morning {
+#morning {
   color: black;
 }
 
-.morning-items {
+#morning-items {
   font-weight: bold;
 }
 
-.afternoon {
+#afternoon {
   color: blue;
 }
 
-.afternoon-items {
+#afternoon-items {
   font-style: italic;
 }
 
-.evening {
+#evening {
   color: purple;
 }
 
