@@ -1,0 +1,68 @@
+<!-- Given the code below, what is the minimum width and height (in pixels) that
+ the div needs to entirely contain the section element (including its margins)?
+ How does this differ from the result of the previous practice problem? -->
+
+ <!-- 
+
+<div>
+  <section>content</section>
+</div>
+
+div {
+  background-color: lightgray;
+  border: 1px solid black;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  border: 4px solid red;
+  box-sizing: content-box;
+  display: block;
+  height: 300px;
+  margin: 20px 19px 10px 11px;
+  padding: 10px 20px;
+  width: 500px;
+}
+
+ -->
+
+<div>
+  <section>content</section>
+</div>
+
+<style>
+  div {
+    background-color: lightgray;
+    border: 1px solid black;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 360;
+    margin: 0;
+    padding: 0;
+    width: 580;
+  }
+
+  section {
+    border: 4px solid red;
+    box-sizing: content-box;
+    display: block;
+    height: 300px;
+    margin: 20px 19px 10px 11px;
+    padding: 10px 20px;
+    width: 500px;
+  }
+</style>
+
+<!-- 
+width: 580
+height: 360
+The same dimensions are still needs to contain the section element, but the difference
+is that since the display property for the section element is now 
+block instead of inline-block, if the div container dimensions were expanded,
+additional elements would be placed on new lines. With inline-block, if there were
+space on a line for additional elements, those elements would be placed horizontally
+to fill the space before starting a new line.
+-->

@@ -1,0 +1,16 @@
+<!-- Challenge. Given our solution to the previous question, 
+ what will happen if we put the article tags on separate lines? -->
+
+<section>
+  <article>content</article>
+  <article>more content</article>
+</section>
+
+<!-- 
+Because there is now a line break between the two article elements,
+the browser will actually compress this line break down to a single 
+whitespace character and render it as its own box between the two
+article elements. Since the two article elements were sized to fit precisely
+within the section element, this extra box allocated to the whitespace
+character is just enough to push the second article element to the next line.
+-->

@@ -1,0 +1,61 @@
+<!-- Given the code below, what is the minimum width and height (in pixels)
+ that the div needs to entirely contain the em element (including its margins)? -->
+
+ <!-- 
+
+<div>
+  <em>content</em>
+</div>
+
+div {
+  background-color: lightgray;
+  border: 1px solid black;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+em {
+  border: 4px solid red;
+  box-sizing: content-box;
+  display: inline;
+  height: 300px;
+  margin: 20px 19px 10px 11px;
+  padding: 10px 20px;
+  width: 500px;
+} 
+
+-->
+
+<div>
+  <em>content</em>
+</div>
+
+<style>
+  div {
+    background-color: lightgray;
+    border: 1px solid black;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 50;
+    margin: 0;
+    padding: 0;
+    width: 130;
+  }
+
+  em {
+    border: 4px solid red;
+    box-sizing: content-box;
+    display: inline;
+    height: 300px;
+    margin: 20px 19px 10px 11px;
+    padding: 10px 20px;
+    width: 500px;
+  }
+</style>
+
+<!-- 
+width: 50 (assumed content width) + 20*2 + 4*2 + 19+11 + 1*2 = 130
+height: 20 (assumed content height) + 10*2 + 4*2 + 1*2 = 50
+-->

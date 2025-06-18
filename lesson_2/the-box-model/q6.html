@@ -1,0 +1,72 @@
+<!-- Will the following code display the two article boxes side by side?
+ If not, why not? How would you fix it so that it places the boxes side by side? -->
+
+<!-- 
+ 
+<section>
+  <article>content</article><article>more content</article>
+</section>
+
+section {
+  background-color: yellow;
+  border: 1px solid red;
+  box-sizing: content-box;
+  display: inline-block;
+  height: 400px;
+  margin: 0;
+  padding: 20px;
+  width: 900px;
+}
+
+article {
+  background-color: lime;
+  border: 1px solid blue;
+  height: 100%;
+  margin: 0;
+  padding: 10px;
+  width: 50%;
+} 
+  
+-->
+<section>
+  <article>content</article><article>more content</article>
+</section>
+
+<style>
+  section {
+    background-color: yellow;
+    border: 1px solid red;
+    box-sizing: content-box;
+    display: inline-block;
+    height: 400px;
+    margin: 0;
+    padding: 20px;
+    width: 900px;
+  }
+
+  article {
+    background-color: lime;
+    border: 1px solid blue;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 100%;
+    margin: 0;
+    padding: 10px;
+    width: 50%;
+  } 
+</style>
+
+<!-- 
+The article boxes will not be placed side by side, but rather on two separate lines.
+Article elements are block elements by default, which means they will each always occupy
+a single line by themself.
+Additionally, since no box-sizing value has been specified for the article selector, 
+the default value is set to content-box. This means that the content area width for both
+article elements before accounting for padding and borders will each be exactly 50%
+of the section width, which would just be enough to place the article elements side
+by side if there were no padding or borders. But since there is padding and borders,
+this would cause the rendered width of both elements together to not fit on one line,
+so the second article element would be placed on a new line.
+To ensure both elements are placed side by side on the same line, the display property
+can instead be set to inline-block and the box-sizing property can be set to border-box.
+-->
