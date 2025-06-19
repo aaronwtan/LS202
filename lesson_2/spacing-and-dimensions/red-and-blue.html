@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Red and Blue</title>
+    <meta charset="utf-8">
+    <style>
+      div {
+        box-sizing: border-box;
+        display: inline-block;
+        height: 300px;
+        width: 300px;
+      }
+
+      .red {
+        background-color: #fcc;
+        margin-right: 20px;
+        padding: 20px;
+      }
+
+      .blue {
+        background-color: #ccf;
+        border: 5px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="red"></div>
+    <div class="blue"></div>
+  </body>
+</html>
+
+<!-- 
+6. Why is the blue box a different size?
+The box-sizing model by default is content-box, which means the specified 
+width and height of the blue boxwill correspond to the width and height
+of the content area before padding and borders are added. Because of this,
+adding the 5px border adds 10px total to the width of the displayed blue box
+-->
