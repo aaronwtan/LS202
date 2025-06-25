@@ -1,3 +1,4 @@
+/* Base Typography */
 html {
   font-size: 28px;
 }
@@ -7,31 +8,33 @@ body {
   margin: 0;
 }
 
-article {
-  border: 2px solid black;
-  box-sizing: border-box;
-  line-height: 1.5rem;
-  margin: auto;
-  padding: 6px;
-  width: 680px;
-}
-
-header {
-  border-bottom: 1rem solid black;
-}
-
 h1 {
   font: bold 3.4rem 'Franklin Gothic Heavy', 'Helvetica Black', Helvetica, Arial, sans-serif;
   line-height: 3rem;
   margin: 0;
 }
 
+/* General Layout Structure */
+article {
+  border: 0.1rem solid black;
+  box-sizing: border-box;
+  line-height: 1.5rem;
+  margin: auto;
+  padding: 0.2rem;
+  width: 24.3rem;
+}
+
+header {
+  border-bottom: 1rem solid black;
+}
+
 p {
   font-size: 1.2rem;
   line-height: 1.25rem;
-  margin: 0 5px 5px 5px;
+  margin: 0 0.12rem 0.12rem 0.12rem;
 }
 
+/* Specific Table Styling */
 table {
   border-collapse: collapse;
 }
@@ -44,7 +47,7 @@ article > table tbody:first-of-type {
   border-bottom: 0.45rem solid black;
 }
 
-article > table tbody td:last-of-type {
+article > table tbody td:last-of-type, tbody th {
   text-align: right;
 }
 
@@ -52,6 +55,7 @@ tbody:first-of-type td:last-of-type dt {
   font-weight: normal;
 }
 
+/* Bold DV% values in the main nutrient section */
 tbody:nth-of-type(2) td:last-of-type {
   font-weight: bold;
 }
@@ -65,21 +69,13 @@ tbody:nth-of-type(2) td:last-of-type {
   font-weight: normal;
 }
 
-tbody th {
-  text-align: right;
-}
-
 tbody:nth-of-type(2) {
   border-bottom: 0.9rem solid black;
 }
 
 td {
-  border-top: 1px solid black;
+  border-top: 0.05rem solid black;
   font-size: 1.1rem;
-}
-
-footer tr:not(:first-of-type) td {
-  border-top: none; 
 }
 
 dl {
@@ -96,15 +92,38 @@ dd {
   margin: 0;
 }
 
-tfoot td, footer td {
-  font-size: 0.82rem;
+tfoot td, footer th, footer td {
+  font-size: 0.93rem;
+  font-weight: normal;
   line-height: 1rem;
 }
 
-footer .indent {
-  text-indent: 1rem;
+tfoot td {
+  padding: 0.6rem 0 0.2rem 0.7rem;
+  text-indent: -0.6rem;
 }
 
-footer th {
-  font-weight: normal;
+/* Remove row borders from footer section */
+footer tr:not(:first-of-type) td {
+  border-top: none; 
+}
+
+footer .indent {
+  text-indent: 1.25rem;
+}
+
+footer table {
+  width: 100%;
+}
+
+footer tr td:first-child {
+  width: 40%;
+}
+
+footer tr td:last-of-type {
+  width: 10%;
+}
+
+footer tbody tr:first-of-type td {
+  padding-top: 0.25rem;
 }
