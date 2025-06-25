@@ -1,0 +1,110 @@
+html {
+  font-size: 28px;
+}
+
+body {
+  font: 1rem 'Helvetica Black', Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+article {
+  border: 2px solid black;
+  box-sizing: border-box;
+  line-height: 1.5rem;
+  margin: auto;
+  padding: 6px;
+  width: 680px;
+}
+
+header {
+  border-bottom: 1rem solid black;
+}
+
+h1 {
+  font: bold 3.4rem 'Franklin Gothic Heavy', 'Helvetica Black', Helvetica, Arial, sans-serif;
+  line-height: 3rem;
+  margin: 0;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.25rem;
+  margin: 0 5px 5px 5px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+thead {
+  text-align: left;
+}
+
+article > table tbody:first-of-type {
+  border-bottom: 0.45rem solid black;
+}
+
+article > table tbody td:last-of-type {
+  text-align: right;
+}
+
+tbody:first-of-type td:last-of-type dt {
+  font-weight: normal;
+}
+
+tbody:nth-of-type(2) td:last-of-type {
+  font-weight: bold;
+}
+
+.indent {
+  border: none;
+  width: 1rem;
+}
+
+.indent + td dt {
+  font-weight: normal;
+}
+
+tbody th {
+  text-align: right;
+}
+
+tbody:nth-of-type(2) {
+  border-bottom: 0.9rem solid black;
+}
+
+td {
+  border-top: 1px solid black;
+  font-size: 1.1rem;
+}
+
+footer tr:not(:first-of-type) td {
+  border-top: none; 
+}
+
+dl {
+  margin: 0;
+}
+
+dt {
+  display: inline;
+  font-weight: bold;
+}
+
+dd {
+  display: inline;
+  margin: 0;
+}
+
+tfoot td, footer td {
+  font-size: 0.82rem;
+  line-height: 1rem;
+}
+
+footer .indent {
+  text-indent: 1rem;
+}
+
+footer th {
+  font-weight: normal;
+}
