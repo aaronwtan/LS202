@@ -37,6 +37,7 @@ p {
 /* Specific Table Styling */
 table {
   border-collapse: collapse;
+  width: 100%;
 }
 
 thead {
