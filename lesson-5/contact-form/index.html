@@ -8,17 +8,21 @@
   <body>
     <form action="#" method="post">
       <fieldset>
-        <dl>
+        <dl class="first-name partial">
           <dt><label for="first-name">First Name</label></dt>
           <dd>
             <input type="text" name="first-name" id="first-name" required>
           </dd>
+        </dl><!--
 
+        --><dl class="last-name partial">
           <dt><label for="last-name">Last Name</label></dt>
           <dd>
             <input type="text" name="last-name" id="last-name" required>
           </dd>
+        </dl>
 
+        <dl>
           <dt><label for="email">Email Address</label></dt>
           <dd>
             <input type="email" name="email" id="email" placeholder="example@example.com" 
